@@ -1,0 +1,27 @@
+template(name="header")
+    header
+        #top.container
+            .row
+                //logo
+                .col-md-12.logo
+                    .content-logo
+                        img(src='images/logo.jpg', alt='')
+                //menu
+                nav.col-md-12
+                    .mini-menu
+                        i.fa.fa-bars
+                    ul.menu(auto-active)
+                        li.cl-effect-11(class="{{isActiveRoute name='home'}}")
+                            a(data-hover='HOME', href='/') Home
+                        li.cl-effect-11
+                            a(data-hover='PAGE1', href='#') Page1
+                        li.cl-effect-11
+                            a(data-hover='PAGE2', href='#') Page2
+                        li.cl-effect-11(class="{{isActiveRoute name='contact'}}")
+                            a(data-hover='CONTACT', href='/contact') Contact
+    script.
+        // Mobile menu toggle
+        let mobile_nav = $(".mini-menu");
+        mobile_nav.click(function () {
+            $("#top").find(".menu").toggle(2000);
+        });

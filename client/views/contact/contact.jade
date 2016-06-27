@@ -1,0 +1,32 @@
+template(name="contact")
+    section#section4.cd-section
+        .container
+            .row
+                .col-md-12
+                    h1 Contact
+                    .box-content.contact
+                        .col-md-4.c-info
+                            p
+                                i.fa.fa-phone
+                                | PHONE
+                        .col-md-4.c-info
+                            p
+                                i.fa.fa.fa-map-marker
+                                | ADDRESS
+                        .col-md-4.c-info
+                            p
+                                i.fa.fa-envelope-o
+                                | EMAIL
+                        form#contact_form.form.email-form(method='post', action='', autocomplete='off')
+                            .col-md-6
+                                input#subject.input-contact(type='text', name='subject', placeholder='Subject')
+                                input#name.input-contact(type='text', name='name', placeholder='Name')
+                                input#email.input-contact(type='email', name='email', placeholder='E-mail')
+                            .col-md-6
+                                textarea#message.input-contact(type='text', name='message', placeholder='Message', cols='30', rows='7')
+                                button.btn.submit-contact(type='submit')
+                                    i.fa.fa-envelope-o
+                                    | SUBMIT
+                                p.success Your message has been sent successfully.
+                                p.error E-mail must be valid and message must be longer than 20 characters.
+        // cd-section

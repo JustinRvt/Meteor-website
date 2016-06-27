@@ -23,7 +23,9 @@ mquandalle:jade
 coffeescript
 fourseven:scss
 twbs:bootstrap
-natestrauser:animate-css
 mrt:modernizr-meteor
 fortawesome:fontawesome
 johnantoni:meteor-appear
+kadira:flow-router
+kadira:blaze-layout
+zimme:active-route

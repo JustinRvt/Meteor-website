@@ -239,7 +239,7 @@ img {
     position: relative;
     display: block;
     background-color: $white;
-    height: 400px;
+    min-height: 325px;
     p.slogan {
         text-align: center;
         font-family: $font_3, $font_1;
@@ -899,7 +899,7 @@ dd {
         @extend %extend_8;
     }
 }
-.page-effect.ng-enter {
+.page-effect {
     animation: fadeInDown 2s ease-in;
 }
 header nav .menu {
@@ -998,6 +998,12 @@ figure.effect-oscar {
 .footer-logo {
     text-align: center;
 }
+.footer-copy {
+  margin-top: 2%;
+  p {
+    text-align: center;
+  }
+}
 .footer-social {
     text-align: center;
 }
@@ -1065,9 +1071,6 @@ footer .footer-social a:hover {
 	}
 }
 @media only screen and(max-width: 750px) {
-	.logo-content {
-		text-align: center;
-	}
 	.mini-menu {
 		display: block;
 		i {
@@ -1087,6 +1090,9 @@ footer .footer-social a:hover {
 				border-bottom: 1px solid $color_gallery_approx;
 			}
 		}
+	}
+  .logo-content {
+		text-align: center;
 	}
 }
 @media only screen and(max-width: 730px) {
