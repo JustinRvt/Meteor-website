@@ -34,6 +34,7 @@ htmljs@1.0.10
 http@1.1.7
 id-map@1.0.8
 insecure@1.0.7
+isotope:isotope@2.1.0_1
 johnantoni:meteor-appear@0.0.2
 jquery@1.11.9
 kadira:blaze-layout@2.3.0
@@ -65,6 +66,7 @@ reactive-dict@1.1.8
 reactive-var@1.0.10
 reload@1.1.10
 retry@1.0.8
+richsilv:owl-carousel@0.1.0
 routepolicy@1.0.11
 spacebars@1.0.12
 spacebars-compiler@1.0.12

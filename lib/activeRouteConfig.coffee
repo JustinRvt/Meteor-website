@@ -1,5 +1,5 @@
 ActiveRoute.configure
-  activeClass: 'current'
-  caseSensitive: true
-  disabledClass: 'disabled'
-  regex: 'false'
+    activeClass: 'current'
+    caseSensitive: true
+    disabledClass: 'disabled'
+    regex: 'false'

@@ -13,8 +13,8 @@ template(name="header")
                     ul.menu(auto-active)
                         li.cl-effect-11(class="{{isActiveRoute name='home'}}")
                             a(data-hover='HOME', href='/') Home
-                        li.cl-effect-11
-                            a(data-hover='PAGE1', href='#') Page1
+                        li.cl-effect-11(class="{{isActiveRoute name='work'}}")
+                            a(data-hover='WORK', href='/work') Work
                         li.cl-effect-11
                             a(data-hover='PAGE2', href='#') Page2
                         li.cl-effect-11(class="{{isActiveRoute name='contact'}}")
