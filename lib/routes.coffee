@@ -6,7 +6,7 @@ FlowRouter.route '/',
         return
         ]
     action: ->
-        BlazeLayout.render 'myExample',
+        BlazeLayout.render 'myExample', 
             mainContainer: 'home'
     name: 'home'
     title: 'Home'
