@@ -1,0 +1,1 @@
+{ Work } = require './work.jade'

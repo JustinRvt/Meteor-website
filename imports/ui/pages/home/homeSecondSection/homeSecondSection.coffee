@@ -1,0 +1,1 @@
+{ HomeSecondSection } = require './homeSecondSection.jade'
