@@ -2,3 +2,5 @@
 
 Meteor.publish 'gallery', ->
   Gallery.find()
+Meteor.publish 'sensitiveDatas', ->
+  SensitiveDatas.find()

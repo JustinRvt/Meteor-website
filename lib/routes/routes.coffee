@@ -6,7 +6,7 @@ FlowRouter.route '/',
         return
         ]
     action: ->
-        BlazeLayout.render 'myExample', 
+        BlazeLayout.render 'myExample',
             mainContainer: 'home'
     name: 'home'
     title: 'Home'
@@ -23,6 +23,19 @@ FlowRouter.route '/work',
             mainContainer: 'work'
     name: 'work'
     title: 'Work'
+
+FlowRouter.route '/sensitiveDatas',
+    triggersEnter: [ ->
+        Meteor.defer ->
+            $('#sensitiveDatas').addClass 'page-effect'
+            return
+        return
+        ]
+    action: ->
+        BlazeLayout.render 'myExample',
+            mainContainer: 'sensitiveDatas'
+    name: 'sensitiveDatas'
+    title: 'sensitiveDatas'
 
 FlowRouter.route '/contact',
     triggersEnter: [ ->
