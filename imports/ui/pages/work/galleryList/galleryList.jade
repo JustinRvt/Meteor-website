@@ -1,0 +1,9 @@
+template(name="galleryList")
+    .col-md-4.item(class='{{cat}}')
+        .grid
+            figure.effect-oscar
+                a(href='')
+                    img(src='{{imgUrl}}', alt='{{imgAlt}}')
+                figcaption
+                    p {{desc}}
+                    a.smooth-redirect(href='{{link}}')
