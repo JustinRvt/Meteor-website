@@ -1,15 +1,20 @@
+{ Meteor } = require 'meteor/meteor'
+
+handle = Meteor.subscribe('routes')
+Routes.find {}
+
+
 FlowRouter.route '/',
-    triggersEnter: [ ->
-        Meteor.defer ->
-            $('#section1').addClass 'page-effect'
-            return
-        return
-        ]
-    action: ->
-        BlazeLayout.render 'myExample',
-            mainContainer: 'home'
-    name: 'home'
-    title: 'Home'
+  triggersEnter: [ ->
+    Meteor.defer ->
+      $('#section1').addClass 'page-effect'
+      return
+    return
+ ]
+  action: (params, queryParams) ->
+    BlazeLayout.render 'myExample', mainContainer: 'home'
+  name: 'home'
+  title: 'Home'
 
 FlowRouter.route '/work',
     triggersEnter: [ ->
@@ -24,18 +29,18 @@ FlowRouter.route '/work',
     name: 'work'
     title: 'Work'
 
-FlowRouter.route '/sensitiveDatas',
+FlowRouter.route '/sensitiveData',
     triggersEnter: [ ->
         Meteor.defer ->
-            $('#sensitiveDatas').addClass 'page-effect'
+            $('#sensitiveData').addClass 'page-effect'
             return
         return
         ]
     action: ->
         BlazeLayout.render 'myExample',
-            mainContainer: 'sensitiveDatas'
-    name: 'sensitiveDatas'
-    title: 'sensitiveDatas'
+            mainContainer: 'sensitiveData'
+    name: 'sensitiveData'
+    title: 'sensitiveData'
 
 FlowRouter.route '/contact',
     triggersEnter: [ ->

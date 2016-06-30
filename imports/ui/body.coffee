@@ -12,6 +12,6 @@
 # work
 { Work } = require './pages/work/work.coffee'
 # sensitive datas
-{ Page2 } = require './pages/sensitiveDatas/sensitiveDatas.coffee'
+{ SensitiveData } = require './pages/sensitiveData/sensitiveData.coffee'
 # contact
 { Contact } = require './pages/contact/contact.coffee'
